@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:http="http://www.mulesoft.org/schema/mule/http" xmlns="http://www.mulesoft.org/schema/mule/core"
+	xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd">
+	<flow name="oneFlow" doc:id="ea28f6d9-306a-43e7-81da-95a8d11771ff" >
+		<http:listener doc:name="Listener" doc:id="f8721f2b-1261-4e8c-ac85-85a0a7411a24" config-ref="HTTP_Listener_config" path="/second"/>
+		<logger level="INFO" doc:name="Logger" doc:id="7ff62041-70f7-47a4-a40b-fbc8c1644b44" message="post"/>
+		<set-payload value="#[payload]" doc:name="Set Payload" doc:id="e36b2c9d-412b-4212-a974-38fbf1474f40" />
+	</flow>
+</mule>
