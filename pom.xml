@@ -35,7 +35,7 @@
 							<username>sakibk</username>
 							<password>54#!@Mule</password>
 							<environment>Sandbox</environment>
-							<muleVersion>4.3.0</muleVersion>
+							<muleVersion>4.4.0</muleVersion>
 							<workers>1</workers>
 							<workerType>Micro</workerType>
 							<applicationName>muledep</applicationName>
